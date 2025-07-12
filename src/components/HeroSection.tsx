@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowDown, Sword, Shield, Crown } from "lucide-react";
+import { ArrowDown, Sword, Shield } from "lucide-react";
 import heroImage from "@/assets/hero-fantasy-landscape.jpg";
 
 export const HeroSection = () => {
@@ -13,17 +13,36 @@ export const HeroSection = () => {
         <div className="absolute inset-0 bg-black/60" />
       </div>
 
-      {/* Floating particles effect */}
+      {/* Enhanced floating particles effect */}
       <div className="absolute inset-0">
-        {[...Array(20)].map((_, i) => (
+        {[...Array(35)].map((_, i) => (
           <div
             key={i}
-            className="absolute w-1 h-1 bg-primary rounded-full animate-float opacity-60"
+            className={`absolute rounded-full animate-mystical-float ${
+              i % 3 === 0 
+                ? 'w-2 h-2 bg-primary/80' 
+                : i % 3 === 1 
+                ? 'w-1 h-1 bg-accent/70' 
+                : 'w-1.5 h-1.5 bg-primary/60'
+            }`}
             style={{
               left: `${Math.random() * 100}%`,
               top: `${Math.random() * 100}%`,
-              animationDelay: `${Math.random() * 6}s`,
-              animationDuration: `${6 + Math.random() * 4}s`
+              animationDelay: `${Math.random() * 8}s`,
+              animationDuration: `${8 + Math.random() * 6}s`
+            }}
+          />
+        ))}
+        {/* Magical trails */}
+        {[...Array(8)].map((_, i) => (
+          <div
+            key={`trail-${i}`}
+            className="absolute w-px h-8 bg-gradient-to-t from-transparent via-primary/40 to-transparent animate-magical-trail"
+            style={{
+              left: `${Math.random() * 100}%`,
+              top: `${Math.random() * 100}%`,
+              animationDelay: `${Math.random() * 12}s`,
+              animationDuration: `${10 + Math.random() * 8}s`
             }}
           />
         ))}
@@ -70,13 +89,6 @@ export const HeroSection = () => {
         </div>
       </div>
 
-      {/* Decorative elements */}
-      <div className="absolute top-20 left-20 opacity-20">
-        <Crown className="w-16 h-16 text-primary animate-glow" />
-      </div>
-      <div className="absolute bottom-20 right-20 opacity-20">
-        <Sword className="w-12 h-12 text-accent animate-float" />
-      </div>
     </section>
   );
 };

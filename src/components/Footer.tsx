@@ -1,4 +1,4 @@
-import { Crown, Heart } from "lucide-react";
+import { Heart } from "lucide-react";
 
 export const Footer = () => {
   return (
@@ -6,12 +6,10 @@ export const Footer = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center space-y-6">
           {/* Logo */}
-          <div className="flex items-center justify-center gap-3">
-            <Crown className="w-8 h-8 text-primary animate-glow" />
+          <div className="flex items-center justify-center">
             <span className="font-fantasy text-2xl font-bold hero-text">
               Javier Argañaraz
             </span>
-            <Crown className="w-8 h-8 text-primary animate-glow" />
           </div>
 
           {/* Tagline */}

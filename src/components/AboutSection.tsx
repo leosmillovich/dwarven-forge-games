@@ -8,7 +8,6 @@ export const AboutSection = () => {
     { icon: Clock, label: "Years Experience", value: "5+" },
     { icon: Gamepad2, label: "Games Created", value: "15+" },
     { icon: Users, label: "Team Projects", value: "8+" },
-    { icon: Trophy, label: "Awards Won", value: "3" },
   ];
 
   const specialties = [
@@ -80,19 +79,23 @@ export const AboutSection = () => {
         </div>
 
         {/* Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {stats.map((stat) => (
-            <Card key={stat.label} className="fantasy-card border-border/50">
-              <CardContent className="flex flex-col items-center justify-center p-6 text-center">
-                <stat.icon className="w-8 h-8 text-primary mb-3" />
-                <div className="text-3xl font-bold text-primary font-fantasy mb-1">
+            <div key={stat.label} className="text-center group">
+              <div className="fantasy-card p-8 hover:scale-105 transition-transform duration-300">
+                <div className="mb-4 flex justify-center">
+                  <div className="p-4 rounded-full bg-mystical-gradient">
+                    <stat.icon className="w-10 h-10 text-white" />
+                  </div>
+                </div>
+                <div className="text-4xl font-bold text-primary font-fantasy mb-2 group-hover:text-accent transition-colors">
                   {stat.value}
                 </div>
-                <div className="text-sm text-foreground/70">
+                <div className="text-lg text-foreground/80 font-medium">
                   {stat.label}
                 </div>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
           ))}
         </div>
       </div>
