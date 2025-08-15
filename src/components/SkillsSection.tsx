@@ -119,9 +119,9 @@ export const SkillsSection = () => {
             <CardContent>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
                 {[
-                  "Unity Engine", "Unreal Engine", "Blender", "Maya",
-                  "Photoshop", "Figma", "Git", "Perforce",
-                  "Jira", "Confluence", "Trello", "Slack"
+                  "Unity Engine", "Unreal Engine",
+                  "Git", "C#", "Visual studio",
+                  "Jira", "Confluence", "Trello"
                 ].map((tool) => (
                   <div 
                     key={tool}
