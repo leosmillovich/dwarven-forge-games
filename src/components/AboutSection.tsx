@@ -1,13 +1,11 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Gamepad2, Users, Trophy, Clock } from "lucide-react";
+import { Gamepad2 } from "lucide-react";
 import profileImage from "@/assets/javier-profile.jpg";
 
 export const AboutSection = () => {
   const stats = [
-    { icon: Clock, label: "Years Experience", value: "5+" },
     { icon: Gamepad2, label: "Games Created", value: "15+" },
-    { icon: Users, label: "Team Projects", value: "8+" },
   ];
 
   const specialties = [
@@ -79,7 +77,7 @@ export const AboutSection = () => {
         </div>
 
         {/* Stats */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 gap-8">
           {stats.map((stat) => (
             <div key={stat.label} className="text-center group">
               <div className="fantasy-card p-8 hover:scale-105 transition-transform duration-300">
