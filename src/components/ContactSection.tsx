@@ -8,20 +8,20 @@ export const ContactSection = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "javier.arganaraz@example.com",
-      href: "mailto:javier.arganaraz@example.com"
+      value: "j_arga@hotmail.com",
+      href: "mailto:j_arga@hotmail.com"
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
       value: "Javier Argañaraz",
-      href: "https://linkedin.com/in/javier-arganaraz"
+      href: "https://www.linkedin.com/in/javier-gd/"
     },
     {
       icon: Youtube,
       label: "YouTube",
       value: "Game Design Insights",
-      href: "https://youtube.com/@javierarganaraz"
+      href: "https://www.youtube.com/channel/UC4-CifsFaeZBzio9nVZ98vA/featured?view_as=subscriber"
     }
   ];
 
