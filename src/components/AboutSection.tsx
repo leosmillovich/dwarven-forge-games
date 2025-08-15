@@ -1,12 +1,12 @@
-import { Card, CardContent } from "@/components/ui/card";
+// import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Gamepad2 } from "lucide-react";
+// import { Gamepad2 } from "lucide-react";
 import profileImage from "@/assets/javier-profile.jpg";
 
 export const AboutSection = () => {
-  const stats = [
-    { icon: Gamepad2, label: "Games Created", value: "15+" },
-  ];
+  // const stats = [
+  //   { icon: Gamepad2, label: "Games Created", value: "15+" },
+  // ];
 
   const specialties = [
     "Level Design & World Building",
@@ -39,9 +39,9 @@ export const AboutSection = () => {
                 className="w-full h-96 object-cover rounded-lg dragon-glow"
               />
             </div>
-            <div className="absolute -top-4 -right-4 w-20 h-20 bg-mystical-gradient rounded-full flex items-center justify-center animate-glow">
+            {/* <div className="absolute -top-4 -right-4 w-20 h-20 bg-mystical-gradient rounded-full flex items-center justify-center animate-glow">
               <Gamepad2 className="w-10 h-10 text-white" />
-            </div>
+            </div> */}
           </div>
 
           {/* Content */}
@@ -76,7 +76,7 @@ export const AboutSection = () => {
           </div>
         </div>
 
-        {/* Stats */}
+        {/* Stats
         <div className="grid grid-cols-1 gap-8">
           {stats.map((stat) => (
             <div key={stat.label} className="text-center group">
@@ -95,7 +95,8 @@ export const AboutSection = () => {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
+
       </div>
     </section>
   );

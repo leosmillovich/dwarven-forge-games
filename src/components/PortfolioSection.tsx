@@ -1,63 +1,45 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+// import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Play, Star } from "lucide-react";
+import empyrionImage from "@/assets/empyirion.png";
+import stumbleImage from "@/assets/stumble.png";
+import arderarImage from "@/assets/arderar.png";
+import goldenImage from "@/assets/golden.avif";
 
 export const PortfolioSection = () => {
   const projects = [
     {
       title: "Empyrion: Galactic Survival",
       description: "Senior Level Designer responsible for creating immersive environments and compelling gameplay mechanics in this space survival adventure.",
-      image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=300&fit=crop",
+      image: empyrionImage,
       technologies: ["Level Design", "World Building", "Game Mechanics"],
-      status: "Released",
-      year: "2023",
       role: "Senior Level Designer at Trick Games"
     },
     {
       title: "Stumble Guys Adventures",
       description: "Contributed to level design and gameplay mechanics for this popular multiplayer party game, focusing on fun and engaging obstacle courses.",
-      image: "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=600&h=300&fit=crop",
+      image: stumbleImage,
       technologies: ["Level Design", "Multiplayer Systems", "User Experience"],
-      status: "Released",
-      year: "2022",
       role: "Level Designer"
     },
     {
-      title: "Dwarven Halls: The Lost Kingdom",
-      description: "Independent RPG project featuring deep underground dwarven cities with intricate mining systems and forge mechanics.",
-      image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&h=300&fit=crop",
-      technologies: ["RPG Systems", "Narrative Design", "Character Development"],
-      status: "In Development",
-      year: "2024",
-      role: "Lead Designer & Creator"
-    },
-    {
-      title: "Elven Realms: Mystic Forest",
-      description: "Fantasy adventure focusing on elven magic systems and enchanted forest exploration with branching narrative paths.",
-      image: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=600&h=300&fit=crop",
+      title: "Arderar project",
+      description: "Creating my own tabletop RPG holds profound meaning for me; it’s the realization of a cherished aspiration, from the very first rough sketch on paper to the final word crafted in the book. This journey has been both a tribute to my love for role-playing games and a personal labor of passion and creativity.",
+      image: arderarImage,
       technologies: ["Magic Systems", "Environmental Storytelling", "Quest Design"],
       status: "Concept",
       year: "2024",
-      role: "Game Designer"
-    },
-    {
-      title: "Age of Dragons: Legacy",
-      description: "Epic fantasy RPG featuring dragon riders, ancient civilizations, and large-scale battles in a rich fantasy world.",
-      image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&h=300&fit=crop",
-      technologies: ["Combat Systems", "Dragon AI", "Epic Storytelling"],
-      status: "Pre-Production",
-      year: "2024",
-      role: "Creative Director"
+      role: "Creator & Designer"
     },
     {
       title: "Goldening Fall",
-      description: "Atmospheric adventure game set in mystical autumn forests with puzzle-solving and exploration elements.",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=300&fit=crop",
+      description: "Create this level with the goal of initiating the player into the game mechanics while being presented with an environment  full of magical and  mysterious that invites them to explore.",
+      image: goldenImage,
       technologies: ["Puzzle Design", "Atmospheric Design", "Environmental Art"],
       status: "Released",
       year: "2021",
-      role: "Level Designer"
+      role: "Creator & Designer"
     }
   ];
 
@@ -128,7 +110,7 @@ export const PortfolioSection = () => {
                     </Badge>
                   ))}
                 </div>
-
+{/* 
                 <div className="flex gap-2 pt-2">
                   {project.status === "Released" && (
                     <Button size="sm" className="flex-1">
@@ -140,7 +122,7 @@ export const PortfolioSection = () => {
                     <ExternalLink className="w-4 h-4 mr-2" />
                     Details
                   </Button>
-                </div>
+                </div> */}
               </CardContent>
             </Card>
           ))}

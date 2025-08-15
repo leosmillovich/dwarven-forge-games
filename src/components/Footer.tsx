@@ -19,7 +19,7 @@ export const Footer = () => {
 
           {/* Copyright */}
           <div className="flex items-center justify-center gap-2 text-sm text-foreground/60">
-            <span>© 2024 Javier Argañaraz. Made with</span>
+            <span>© 2025 Javier Argañaraz. Made with</span>
             <Heart className="w-4 h-4 text-destructive fill-current" />
             <span>for the gaming community.</span>
           </div>

@@ -4,7 +4,7 @@ import heroImage from "@/assets/hero-fantasy-landscape.jpg";
 
 export const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -66,28 +66,32 @@ export const HeroSection = () => {
 
         {/* Action Buttons */}
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center animate-slide-up">
-          <Button 
+          {/* <Button 
             size="lg" 
             className="bg-dragon-gradient hover:scale-105 transition-transform dragon-glow px-8 py-4 text-lg font-semibold"
           >
             <Sword className="mr-2" />
             Explore My Worlds
-          </Button>
-          <Button 
-            variant="outline" 
+          </Button> */}
+          <Button
+            asChild
+            variant="outline"
             size="lg"
             className="border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-4 text-lg"
           >
-            <Shield className="mr-2" />
-            View Portfolio
+            <a href="#portfolio">
+              <Shield className="mr-2" />
+              View Portfolio
+            </a>
           </Button>
         </div>
 
-        {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+     
+      </div>
+         {/* Scroll indicator */}
+         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
           <ArrowDown className="w-6 h-6 text-primary" />
         </div>
-      </div>
 
     </section>
   );
